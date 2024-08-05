@@ -116,7 +116,7 @@
 				}, 600);
 			});
 			const time = new Date();
-			const key = time.getUTCFullYear() * time.getUTCMonth() * time.getUTCDate();
+			const key = time.getUTCFullYear() * (time.getUTCMonth() + 1) * time.getUTCDate();
 			try {
 				navigator.clipboard.writeText(key);
 				alert(`Copied to clipboard (${key})`);
